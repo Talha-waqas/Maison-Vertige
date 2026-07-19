@@ -254,6 +254,15 @@ blockquote, .blockquote {
   html {
     font-size: 14px;
   }
+  h1, .h1 {
+    font-size: 2.3rem !important; /* Prevents long words like 'COLLECTION' from overflowing */
+  }
+  h2, .h2 {
+    font-size: 1.8rem !important;
+  }
+  h3, .h3 {
+    font-size: 1.4rem !important;
+  }
   .container {
     padding: 0 var(--space-24) !important; /* 24px container padding on mobile */
   }

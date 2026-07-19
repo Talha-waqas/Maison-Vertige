@@ -73,6 +73,9 @@
     width: 100%;
     padding: var(--space-64) var(--space-32);
   }
+  .hero-content h1 {
+    font-size: 2.4rem; /* Prevents overflow of the word 'COLLECTION' */
+  }
 }
 
 /* --- CATEGORY STRIP --- */
@@ -397,6 +400,7 @@
   color: var(--dark);
   width: 100%;
   outline: none;
+  min-width: 0; /* Allows text inputs to scale down and shrink below default size */
 }
 
 .newsletter-input::placeholder {
