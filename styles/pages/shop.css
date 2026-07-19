@@ -35,10 +35,6 @@
   transition: top var(--transition-normal);
 }
 
-/* If announcement bar is present and open, we offset top */
-body:not(.announcement-closed) .filter-bar-wrapper {
-  /* Dynamic adjustment can be done in JS, but 108px is static default */
-}
 
 .filter-bar {
   display: flex;
