@@ -1,0 +1,172 @@
+/* --- HERO BANNER --- */
+.contact-hero {
+  height: 30vh;
+  min-height: 200px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--space-24);
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin: var(--space-8) 0;
+}
+
+/* --- CONTACT GRID --- */
+.contact-section {
+  background-color: var(--surface);
+}
+
+.contact-grid {
+  display: flex;
+  gap: 80px;
+}
+
+/* Left: Form */
+.contact-form-col {
+  width: 55%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.form-input, .form-select, .form-textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  padding: 8px 0;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--dark);
+  outline: none;
+  width: 100%;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: var(--space-24);
+}
+
+/* Right: Info Details */
+.contact-info-col {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-48);
+}
+
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-info-title {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-ultra);
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.contact-info-text {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.contact-info-text a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-info-text a:hover {
+  color: var(--accent);
+}
+
+.contact-social-row {
+  display: flex;
+  gap: var(--space-24);
+}
+
+.contact-social-link {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  transition: color var(--transition-fast);
+}
+
+.contact-social-link:hover {
+  color: var(--dark);
+}
+
+@media (max-width: 991px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: var(--space-64);
+  }
+  .contact-form-col, .contact-info-col {
+    width: 100%;
+  }
+}
+
+/* --- BOOK APPOINTMENT --- */
+.appointment-section {
+  background-color: var(--bg);
+  text-align: center;
+}
+
+.appointment-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.appointment-text {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: var(--space-32);
+  line-height: 1.7;
+}

@@ -1,0 +1,425 @@
+/* Maison Vertige - Luxury Design System */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Cormorant+SC:wght@500&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* --- CUSTOM PROPERTIES --- */
+:root {
+  /* Colors */
+  --bg: #FAF7F2;          /* warm ivory */
+  --surface: #FFFFFF;     /* white */
+  --dark: #1A1A1A;        /* black */
+  --accent: #8B1A2B;      /* deep burgundy */
+  --gold: #B8956A;        /* brushed gold */
+  --muted: #9E968A;       /* warm taupe */
+  --border: #E8E2D9;      /* soft sand */
+  --overlay: rgba(26, 26, 26, 0.85);
+
+  /* Fonts */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-sc: 'Cormorant SC', serif;
+
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-120: 120px;
+
+  /* Letter Spacing */
+  --tracking-tight: 0.01em;
+  --tracking-normal: 0.04em;
+  --tracking-wide: 0.12em;
+  --tracking-ultra: 0.25em;
+
+  /* Transitions */
+  --transition-slow: 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-normal: 0.4s ease;
+  --transition-fast: 0.25s ease;
+}
+
+/* --- RESET & BOX-SIZING --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 !important; /* ZERO border-radius anywhere */
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--dark);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  opacity: 0;
+  animation: bodyFadeIn 0.5s ease forwards;
+}
+
+@keyframes bodyFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- SELECTION --- */
+::selection {
+  background-color: var(--accent);
+  color: var(--surface);
+}
+
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* --- TYPOGRAPHY --- */
+h1, .h1 {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+h2, .h2 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+h3, .h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: var(--tracking-normal);
+  color: var(--dark);
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: var(--tracking-ultra);
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--dark);
+}
+
+small, .small {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+blockquote, .blockquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  padding-left: var(--space-24);
+  border-left: 1px solid var(--accent);
+  color: var(--dark);
+  margin: var(--space-32) 0;
+}
+
+/* --- UTILITIES --- */
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 var(--space-64);
+  width: 100%;
+}
+
+.label {
+  font-family: var(--font-sc);
+  font-variant: all-small-caps;
+  letter-spacing: var(--tracking-ultra);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  width: 60px;
+  margin: var(--space-24) auto;
+}
+
+.divider-gold {
+  border: none;
+  border-top: 1px solid var(--gold);
+  width: 60px;
+  margin: var(--space-24) auto;
+}
+
+.section-spacing {
+  padding: 100px 0;
+}
+
+.text-accent {
+  color: var(--accent) !important;
+}
+
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+/* Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 991px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .container {
+    padding: 0 var(--space-32);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; /* smaller gap on mobile */
+  }
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  html {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 var(--space-24) !important; /* 24px container padding on mobile */
+  }
+  .section-spacing {
+    padding: 56px 0 !important; /* 56px spacing on mobile */
+  }
+}
+
+/* Touch Targets minimum sizing */
+button, 
+a, 
+input, 
+select, 
+textarea, 
+.size-option, 
+.color-swatch-wrapper {
+  min-height: 44px; /* Ensure touch target compliance */
+}
+
+/* Animations Trigger Class */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- ANIMATION KEYFRAMES --- */
+@keyframes fadeReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes imageZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes borderDraw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Hover Zoom Class */
+.zoom-container {
+  overflow: hidden;
+}
+
+.zoom-image {
+  transition: transform 12s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.04);
+}
+
+/* Border Draw Link Underline Utility */
+.border-draw-hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.border-draw-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal);
+}
+
+.border-draw-hover:hover::after {
+  transform: scaleX(1);
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background-color: var(--accent);
+  color: var(--surface);
+  padding: 12px 24px;
+  z-index: 9999;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Global Focus outline standard */
+:focus-visible {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px !important;
+}
+
+/* --- prefers-reduced-motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}

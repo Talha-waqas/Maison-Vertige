@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Heels | Maison Vertige — Luxury Italian Heels</title>
+  <meta name="description" content="Shop the complete Maison Vertige collection of luxury Italian heels. Browse handcrafted pumps, sandals, and mules engineered in Milan for ultimate comfort.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="shop.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="shop.html">
+  <meta property="og:title" content="Shop All Heels | Maison Vertige — Luxury Italian Heels">
+  <meta property="og:description" content="Shop the complete Maison Vertige collection of luxury Italian heels. Browse handcrafted pumps, sandals, and mules engineered in Milan for ultimate comfort.">
+  <meta property="og:image" content="assets/images/category_pumps.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="shop.html">
+  <meta property="twitter:title" content="Shop All Heels | Maison Vertige — Luxury Italian Heels">
+  <meta property="twitter:description" content="Shop the complete Maison Vertige collection of luxury Italian heels. Browse handcrafted pumps, sandals, and mules engineered in Milan for ultimate comfort.">
+  <meta property="twitter:image" content="assets/images/category_pumps.png">
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages/shop.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-text">Complimentary Shipping on Orders Over $1,000</div>
+    <button class="announcement-close" aria-label="Close Announcement">&times;</button>
+  </div>
+
+  <!-- Header -->
+  <header class="header-wrapper">
+    <div class="main-header">
+      <div class="header-left">
+        <button class="hamburger-btn" aria-label="Open Menu" id="openMenuBtn" aria-expanded="false" aria-controls="sideDrawer">
+          <span class="hamburger-icon">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+          <span>Menu</span>
+        </button>
+      </div>
+      <div class="header-center">
+        <a href="index.html" class="brand-logo" aria-label="Maison Vertige Home">Maison Vertige</a>
+      </div>
+      <div class="header-right">
+        <button class="search-btn" aria-label="Search Catalog">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="7" cy="7" r="5"></circle>
+            <line x1="11" y1="11" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        <a href="#" class="bag-btn" aria-label="Shopping Bag, 0 items">
+          <span>Bag (0)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Side Drawer Navigation -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <nav class="side-drawer" id="sideDrawer" aria-label="Main Navigation">
+    <button class="drawer-close" id="closeDrawerBtn" aria-label="Close Menu">&times;</button>
+    
+    <div class="drawer-nav">
+      <a href="shop.html" class="drawer-link border-draw-hover">Shop All</a>
+      <a href="shop.html" class="drawer-link border-draw-hover">Classique</a>
+      <a href="shop.html" class="drawer-link border-draw-hover">Éclat</a>
+      <a href="shop.html" class="drawer-link border-draw-hover">Atelier</a>
+      <a href="about.html" class="drawer-link border-draw-hover">The Maison</a>
+      <a href="lookbook.html" class="drawer-link border-draw-hover">Lookbook</a>
+      <a href="size-guide.html" class="drawer-link border-draw-hover">Size Guide</a>
+    </div>
+
+    <hr class="drawer-divider">
+
+    <div class="drawer-sub-nav">
+      <a href="stockists.html" class="drawer-sub-link">Stockists</a>
+      <a href="contact.html" class="drawer-sub-link">Contact</a>
+      <a href="#" class="drawer-sub-link">Shipping & Returns</a>
+      <a href="#" class="drawer-sub-link">Care Guide</a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="#" class="drawer-social-link" aria-label="Instagram">Instagram</a>
+        <a href="#" class="drawer-social-link" aria-label="Pinterest">Pinterest</a>
+        <a href="#" class="drawer-social-link" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Banner -->
+    <section class="shop-hero">
+      <span class="label">All Styles</span>
+      <h1>Shop</h1>
+      <span class="product-count">(12 Styles)</span>
+    </section>
+
+    <!-- Filter Bar Section -->
+    <div class="filter-bar-wrapper">
+      <div class="filter-bar" role="toolbar" aria-label="Product Filtering Options">
+        
+        <div class="filter-left">
+          
+          <!-- Collection Filter -->
+          <div class="filter-dropdown-container" data-filter-type="collection">
+            <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Collection</button>
+            <div class="filter-dropdown-content" role="menu">
+              <ul class="filter-option-list">
+                <li class="filter-option-item active" data-value="all" role="menuitemradio" aria-checked="true"><span class="filter-option-checkbox"></span>All Collections</li>
+                <li class="filter-option-item" data-value="classique" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Classique</li>
+                <li class="filter-option-item" data-value="eclat" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Éclat</li>
+                <li class="filter-option-item" data-value="atelier" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Atelier</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-dropdown-container" data-filter-type="category">
+            <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Category</button>
+            <div class="filter-dropdown-content" role="menu">
+              <ul class="filter-option-list">
+                <li class="filter-option-item active" data-value="all" role="menuitemradio" aria-checked="true"><span class="filter-option-checkbox"></span>All Categories</li>
+                <li class="filter-option-item" data-value="pumps" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Pumps</li>
+                <li class="filter-option-item" data-value="sandals" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Sandals</li>
+                <li class="filter-option-item" data-value="mules" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Mules</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Heel Height Filter -->
+          <div class="filter-dropdown-container" data-filter-type="height">
+            <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Heel Height</button>
+            <div class="filter-dropdown-content" role="menu">
+              <ul class="filter-option-list">
+                <li class="filter-option-item active" data-value="all" role="menuitemradio" aria-checked="true"><span class="filter-option-checkbox"></span>All Heights</li>
+                <li class="filter-option-item" data-value="70mm" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>70mm</li>
+                <li class="filter-option-item" data-value="85mm" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>85mm</li>
+                <li class="filter-option-item" data-value="100mm" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>100mm</li>
+                <li class="filter-option-item" data-value="105mm" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>105mm</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Color Filter -->
+          <div class="filter-dropdown-container" data-filter-type="color">
+            <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Color</button>
+            <div class="filter-dropdown-content" style="width: 260px;" role="menu">
+              <ul class="filter-option-list" style="margin-bottom: 16px;">
+                <li class="filter-option-item active" data-value="all" role="menuitemradio" aria-checked="true"><span class="filter-option-checkbox"></span>All Colors</li>
+              </ul>
+              <div class="filter-color-swatches" role="radiogroup" aria-label="Color Swatches Filter">
+                <div class="color-swatch-wrapper" data-tooltip="Black">
+                  <span class="color-swatch filter-option-item" data-value="black" role="radio" aria-checked="false" aria-label="Black Color Swatch" style="background-color: #1A1A1A;"></span>
+                </div>
+                <div class="color-swatch-wrapper" data-tooltip="Nude">
+                  <span class="color-swatch filter-option-item" data-value="nude" role="radio" aria-checked="false" aria-label="Nude Color Swatch" style="background-color: #E6CBB2;"></span>
+                </div>
+                <div class="color-swatch-wrapper" data-tooltip="Red">
+                  <span class="color-swatch filter-option-item" data-value="red" role="radio" aria-checked="false" aria-label="Red Color Swatch" style="background-color: #8B1A2B;"></span>
+                </div>
+                <div class="color-swatch-wrapper" data-tooltip="Gold">
+                  <span class="color-swatch filter-option-item" data-value="gold" role="radio" aria-checked="false" aria-label="Gold Color Swatch" style="background-color: #B8956A;"></span>
+                </div>
+                <div class="color-swatch-wrapper" data-tooltip="Silver">
+                  <span class="color-swatch filter-option-item" data-value="silver" role="radio" aria-checked="false" aria-label="Silver Color Swatch" style="background-color: #D1D5DB;"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="filter-right">
+          <!-- Sort Filter -->
+          <div class="filter-dropdown-container" data-filter-type="sort">
+            <button class="filter-btn" aria-haspopup="true" aria-expanded="false">Sort By</button>
+            <div class="filter-dropdown-content" role="menu">
+              <ul class="filter-option-list">
+                <li class="filter-option-item active" data-value="newest" role="menuitemradio" aria-checked="true"><span class="filter-option-checkbox"></span>Newest</li>
+                <li class="filter-option-item" data-value="low-high" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Price Low-High</li>
+                <li class="filter-option-item" data-value="high-low" role="menuitemradio" aria-checked="false"><span class="filter-option-checkbox"></span>Price High-Low</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Active Filter Tags Panel -->
+      <div class="active-tags-section">
+        <button class="clear-all-filters" style="display: none;">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Product Grid Section -->
+    <section class="shop-grid-section section-spacing" aria-label="Product listings">
+      <div class="container">
+        
+        <div class="grid-4" data-stagger>
+          
+          <!-- Daphne 105 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="classique" data-category="pumps" data-height="105mm" data-color="black" data-price="895" data-id="12" aria-label="Daphne 105, Black Patent Pump, $895">
+            <span class="badge badge-new">New</span>
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_daphne.png" alt="Daphne 105 Black Patent Pump - Luxury Italian Heels" class="product-card-image" fetchpriority="high">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Daphne 105</span>
+              <span class="product-card-material">Black Patent Pump</span>
+              <span class="product-card-price">$895</span>
+            </div>
+          </div>
+
+          <!-- Daphne 85 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="classique" data-category="pumps" data-height="85mm" data-color="nude" data-price="825" data-id="11" aria-label="Daphne 85, Nude Nappa Pump, $825">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/category_pumps.png" alt="Daphne 85 Nude Nappa Pump - Luxury Italian Heels" class="product-card-image" fetchpriority="high">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Daphne 85</span>
+              <span class="product-card-material">Nude Nappa Pump</span>
+              <span class="product-card-price">$825</span>
+            </div>
+          </div>
+
+          <!-- Riviera -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="classique" data-category="mules" data-height="70mm" data-color="black" data-price="795" data-id="10" aria-label="Riviera, Black Satin Mule, $795">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_riviera.png" alt="Riviera Black Satin Mule - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Riviera</span>
+              <span class="product-card-material">Black Satin Mule</span>
+              <span class="product-card-price">$795</span>
+            </div>
+          </div>
+
+          <!-- Allegra 100 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="classique" data-category="pumps" data-height="100mm" data-color="nude,white" data-price="875" data-id="9" aria-label="Allegra 100, Ivory Suede Pump, $875">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/campaign_hero.png" alt="Allegra 100 Ivory Suede Pump - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Allegra 100</span>
+              <span class="product-card-material">Ivory Suede Pump</span>
+              <span class="product-card-price">$875</span>
+            </div>
+          </div>
+
+          <!-- Celeste 85 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="eclat" data-category="sandals" data-height="85mm" data-color="silver" data-price="1450" data-id="8" aria-label="Celeste 85, Crystal Sandal, $1,450">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_celeste.png" alt="Celeste 85 Crystal Sandal - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Celeste 85</span>
+              <span class="product-card-material">Crystal Sandal</span>
+              <span class="product-card-price">$1,450</span>
+            </div>
+          </div>
+
+          <!-- Aurelia 100 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="eclat" data-category="sandals" data-height="100mm" data-color="gold" data-price="1200" data-id="7" aria-label="Aurelia 100, Gold Strappy Heel, $1,200">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_aurelia.png" alt="Aurelia 100 Gold Strappy Heel - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Aurelia 100</span>
+              <span class="product-card-material">Gold Strappy Heel</span>
+              <span class="product-card-price">$1,200</span>
+            </div>
+          </div>
+
+          <!-- Luna -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="eclat" data-category="mules" data-height="85mm" data-color="silver" data-price="1350" data-id="6" aria-label="Luna, Crystal Mule, $1,350">
+            <span class="badge badge-new">New</span>
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/category_sandals.png" alt="Luna Crystal Mule - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Luna</span>
+              <span class="product-card-material">Crystal Mule</span>
+              <span class="product-card-price">$1,350</span>
+            </div>
+          </div>
+
+          <!-- Stella 105 -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="eclat" data-category="pumps" data-height="105mm" data-color="silver" data-price="1100" data-id="5" aria-label="Stella 105, Silver Mirror Pump, $1,100">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/category_mules.png" alt="Stella 105 Silver Mirror Pump - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Stella 105</span>
+              <span class="product-card-material">Silver Mirror Pump</span>
+              <span class="product-card-price">$1,100</span>
+            </div>
+          </div>
+
+          <!-- Nocturne -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="atelier" data-category="pumps" data-height="100mm" data-color="black" data-price="2100" data-id="4" aria-label="Nocturne, Black Velvet Embroidered, $2,100">
+            <span class="badge badge-last">Last Pair</span>
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/editorial_craftsmanship.png" alt="Nocturne Black Velvet Embroidered - Luxury Italian Heels" class="product-card-image" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Nocturne</span>
+              <span class="product-card-material">Black Velvet Embroidered</span>
+              <span class="product-card-price">$2,100</span>
+            </div>
+          </div>
+
+          <!-- Opéra -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="atelier" data-category="pumps" data-height="105mm" data-color="red" data-price="1800" data-id="3" aria-label="Opéra, Wine Satin Bow Pump, $1,800">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_daphne.png" alt="Opéra Wine Satin Bow Pump - Luxury Italian Heels" class="product-card-image" style="filter: sepia(0.2) hue-rotate(320deg) saturate(1.5);" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Opéra</span>
+              <span class="product-card-material">Wine Satin Bow Pump</span>
+              <span class="product-card-price">$1,800</span>
+            </div>
+          </div>
+
+          <!-- Jardin -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="atelier" data-category="mules" data-height="70mm" data-color="gold" data-price="1950" data-id="2" aria-label="Jardin, Floral Jacquard Mule, $1,950">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/category_mules.png" alt="Jardin Floral Jacquard Mule - Luxury Italian Heels" class="product-card-image" style="filter: sepia(0.3) saturate(1.3) hue-rotate(10deg);" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Jardin</span>
+              <span class="product-card-material">Floral Jacquard Mule</span>
+              <span class="product-card-price">$1,950</span>
+            </div>
+          </div>
+
+          <!-- Bijou -->
+          <div class="product-card reveal" tabindex="0"
+               data-collection="atelier" data-category="sandals" data-height="85mm" data-color="gold" data-price="2400" data-id="1" aria-label="Bijou, Jeweled Ankle Strap, $2,400">
+            <div class="product-card-image-wrapper">
+              <img src="assets/images/product_celeste.png" alt="Bijou Jeweled Ankle Strap - Luxury Italian Heels" class="product-card-image" style="filter: hue-rotate(45deg) saturate(0.8);" loading="lazy">
+            </div>
+            <div class="product-card-info">
+              <span class="product-card-title">Bijou</span>
+              <span class="product-card-material">Jeweled Ankle Strap</span>
+              <span class="product-card-price">$2,400</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="load-more-container reveal">
+          <button class="btn-outline" onclick="alert('All styles loaded.');">Load More Styles</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Recently Viewed Section -->
+    <section class="recently-viewed-section section-spacing" aria-label="Recently viewed products">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Your Selections</span>
+          <h2>Recently Viewed</h2>
+          <div class="divider-gold"></div>
+        </div>
+        <div class="recently-viewed-scroll">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html" class="footer-link">Shop All</a></li>
+            <li><a href="shop.html" class="footer-link">Classique Collection</a></li>
+            <li><a href="shop.html" class="footer-link">Éclat Collection</a></li>
+            <li><a href="shop.html" class="footer-link">Atelier Exclusives</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">The House</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">The Maison Story</a></li>
+            <li><a href="lookbook.html" class="footer-link">Lookbook</a></li>
+            <li><a href="#" class="footer-link">Press & Media</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="size-guide.html" class="footer-link">Size Guide</a></li>
+            <li><a href="#" class="footer-link">Shipping & Customs</a></li>
+            <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+            <li><a href="#" class="footer-link">Care Guide</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Atelier</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Stay Connected</h4>
+          <p class="footer-text">Join for early access and editorial stories.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed'); this.reset();">
+            <label for="newsletter-email-footer" class="form-label" style="display:none;">Email Address</label>
+            <input type="email" id="newsletter-email-footer" placeholder="Your Email Address" class="footer-email-input" required aria-label="Footer Email">
+            <button type="submit" class="footer-submit-btn" aria-label="Submit Email Address">
+              &rarr;
+            </button>
+          </form>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/maisonvertige" class="footer-social-link" aria-label="Follow us on Instagram">Instagram</a>
+            <a href="https://www.pinterest.com/maisonvertige" class="footer-social-link" aria-label="Follow us on Pinterest">Pinterest</a>
+            <a href="https://www.tiktok.com/@maisonvertige" class="footer-social-link" aria-label="Follow us on TikTok">TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 Maison Vertige. All Rights Reserved. Made in Italy.
+        </div>
+        <div class="footer-meta-links">
+          <a href="#" class="footer-meta-link">Privacy Policy</a>
+          <a href="#" class="footer-meta-link">Terms of Service</a>
+        </div>
+        <div class="footer-country-selector" role="button" tabindex="0" aria-label="Select Country and Currency">
+          <span>United States / USD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Product Modal -->
+  <div class="quick-view-modal" id="quickViewModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="quick-view-overlay"></div>
+    <div class="quick-view-container">
+      <button class="quick-view-close" aria-label="Close modal">&times;</button>
+      <div class="quick-view-media">
+        <img src="" alt="Quick View Product" class="quick-view-img">
+      </div>
+      <div class="quick-view-details">
+        <span class="label" style="margin-bottom: 8px;">Atelier Edition</span>
+        <h3 class="quick-view-title" style="margin-bottom: 8px;">Product Name</h3>
+        <p class="quick-view-material" style="color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Material</p>
+        <p class="quick-view-price" style="font-size: 1.2rem; margin-bottom: 24px;">$0.00</p>
+        
+        <p class="quick-view-description" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 32px; font-weight: 300;">
+          A masterfully engineered heel constructed with signature styling details, premium Italian materials, and a structural stiletto line.
+        </p>
+
+        <!-- Swatches and Sizes (UI Mock elements) -->
+        <div style="margin-bottom: 24px;">
+          <p class="small" style="margin-bottom: 12px; font-size: 0.7rem;">Select Size</p>
+          <div class="size-selector" role="radiogroup" aria-label="Size Selector">
+            <button class="size-option" role="radio" aria-checked="false">36</button>
+            <button class="size-option active" role="radio" aria-checked="true">37</button>
+            <button class="size-option" role="radio" aria-checked="false">38</button>
+            <button class="size-option" role="radio" aria-checked="false">39</button>
+            <button class="size-option disabled" role="radio" aria-checked="false" disabled>40</button>
+          </div>
+        </div>
+
+        <button class="btn-primary" style="width: 100%; margin-top: 16px;">Add To Bag</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/shop-filter.js" defer></script>
+
+  <script>
+    // Wire up bestseller product card click triggers to open quick-view modal
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          const name = card.querySelector('.product-card-title').textContent;
+          const material = card.querySelector('.product-card-material').textContent;
+          const price = card.querySelector('.product-card-price').textContent;
+          const image = card.querySelector('.product-card-image').src;
+          
+          if (typeof window.openQuickView === 'function') {
+            window.openQuickView({
+              name: name,
+              material: material,
+              price: price,
+              image: image
+            });
+          }
+        });
+        
+        // Add enter keypress accessibility support for product cards
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            card.click();
+          }
+        });
+        
+        card.style.cursor = 'pointer';
+      });
+    });
+  </script>
+
+</body>
+</html>
